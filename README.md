@@ -2,13 +2,6 @@
 
 Sleep Tracker is a mobile-friendly web application that enables you to track your sleep schedule at the push of a button (well, one tap to sleep and one to wake up). You can also see your sleep trends and "sleep debt". `yarn dev` to run the frontend and backend locally.
 
-We use the Google "Firebase" authentication system so that you can link your account to your email address and access your data securely from any device.
-
-An advanced version of Sleep Tracker updated by my incredible partner @esfinkel is currently deployed at https://sleeptracker-7640d.firebaseapp.com.
-
-Sleep Tracker is intended to supplant the mobile apps that I've used, which want to record your snores and offer "expert" recommendations yet lack basic recordkeeping features such as the addition of retroactive data.
-
-Your data will not be sold or given away. If we decide we want to share anonymous data, we will ask for your permission first.
 
 ## Installation
 Sleep Tracker will run on your browser without any installation or other work. This section is for people who want to contribute to the project.
@@ -38,6 +31,5 @@ In the backend folder, run `yarn install` to install the required node modules. 
 * "body-parser" to parse requests
 * "firebase-admin" to access the database
 
-Again, the files available on GitHub omit some authentication information. If you want the frontend to make real API calls to the backend, you can create your own free Firebase project. Note that some of the files in this repo have urls indicating relevant tutorials or other resources. Then you would update the `const url =` lines in the frontend to point to your localhost server. If you do this, you might as well enable login for the frontend by configuring the "Authentication" section of the Firebase project. Drop the appropriate config jsons into frontend/service-account.json and backend/service-account.json.
 
 Then run `yarn start` to run the backend locally.
